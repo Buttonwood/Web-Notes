@@ -1,0 +1,50 @@
+div#header {
+    width: 100%;
+    background-color: #990000;
+    top: 0;
+    left: 0;
+    /*
+    	随滚动条滚动fixed
+     */
+    position: fixed; /* fixed; */
+}
+
+div#header h2 {
+    font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 2em;
+    margin-left: 2%;
+    padding: 0;
+}
+
+div#header img{
+	float: left;
+	margin: .9em .6em .9em .6em;
+}
+
+div#box-1 {
+    position: absolute;
+    background-color: blue;
+    top: 0; /* 150px */
+    right: 2%; /* 50px */
+}
+
+
+div#content {
+    width: 68%;
+    float: left;
+}
+
+div#sidebar {
+    width: 29%;
+    float: right;
+}
+
+div#footer {
+	width: 100%;
+    position: fixed;
+    background-color: pink;
+	bottom: 0;
+	left: 0;
+}

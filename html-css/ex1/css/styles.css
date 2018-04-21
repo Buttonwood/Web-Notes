@@ -1,0 +1,200 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em; /*默认字体大小;否则其他继承标签会有影响*/
+	color: darkslategray;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	/*
+		letter spacing;字母间距;用于正文
+	 */
+	letter-spacing: .1em; /* -0.5em; 0; */
+	/*
+		word spacing;单词间距;用于标题
+	 */
+	word-spacing: 1em;
+	/*
+		行间距;用于正文段落
+		1.2em: normal; 1.8em: half-line; 1em:tigher;
+	 */
+	line-height: 2em; /*1em; 1.2em; 1.8em;*/
+	/*
+		行首缩进
+	 */
+	text-indent: 1em;
+}
+
+h1 {
+	font-family: "Trebuchet MS", Helvetica, serif;
+	font-size: 2em;
+	/*
+		center; left-align; right-align; justify: 严格右对齐;
+	 */
+	text-align: center; /* left; right; justify; */
+}
+
+
+h3, h5 {
+	color: #333333;
+}
+
+h2, h4, h6 {
+	color: #999999;
+}
+
+blockquote {
+	/*
+		引用
+	 */
+	font-size: 1.4em;
+	color: darkslategray;
+}
+
+/*
+	class 与 element 之间是多对多关系
+	id    与 element 之间是一一对应
+ */
+
+.offset {
+	margin:  2em 2em 2em 2em; /* 0 2em 0 1.75em */
+	/*
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	*/
+}
+
+.important {
+	font-size: 2.5em;
+	color: #000;
+	/*
+		100-900; 100:lightest; 400:normal; 900: heaviest
+		lighter, normal, bold, bolder
+	 */
+	font-weight: 900;
+}
+
+.emphasized {
+	/*
+		<i>
+		<em></em>
+		<b></b>
+	 */
+	font-style: italic;
+}
+
+.bigger {
+	font-size: 4em;
+	color: blue;
+}
+
+.typewriter {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.boxed {
+	/*
+		边框
+		dotted; dashed; solid; double; groove; ridge; inset; outset;
+	 */
+	border: 5px solid red;
+	/*
+	border-top:;
+	border-bottom:;
+	border-left:;
+	border-right:;
+	*/
+
+	/*
+		边框与内容距离
+	 */
+	padding: .1em 0.1em .1em .1em;
+	/*
+	padding-left:;
+	padding-top:;
+	padding-right:;
+	padding-bottom:;
+	*/
+}
+
+#mission-statement {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2em;
+	color: darkblue;
+}
+
+/*
+	divs: break up a webpage into sections;
+		can have its own styling, a class or an id;
+		for headers, vanigation bars, main content, footers;
+ */
+div#main {
+	font-size: 1.1em;
+	margin: .1em .1em .1em .1em;
+	color: red;
+}
+
+img.inset {
+	display: block;
+	margin-left:  auto;
+	margin-right: auto;
+	/*
+	margin: 0 auto 0 auto;
+	 */
+	/*
+	悬浮
+	 */
+	float: left; /* right;*/
+}
+
+a {
+	color: #b8860b;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active {
+	font-size: 1.25em;
+}
+
+a:visited {
+	color: deeppink;
+}
+
+
+ul {
+	margin: 0 1.5em 0 1.5em;
+	/*
+	列表markers: disc, square,;
+	 */
+	list-style-type: square;
+	list-style-image: url("images/logo.png");
+}
+
+ol {
+	margin: 0 1.5em 0 1.5em;
+}
+
+li {
+	margin: .75em;
+}
+
+
+th, td {
+	border: 1px solid black;
+	padding: 5px;
+	width: 10%;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 1em;
+	text-align: right;
+}
